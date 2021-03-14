@@ -1,0 +1,121 @@
+:root {
+  --error-color: #e74c3c;
+  --success-color: #2ecc71;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* start here */
+
+body {
+  background-color: rgb(245, 244, 244);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  width: 400px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+
+.form {
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.form-container{
+  margin-bottom: 10px;
+}
+
+.form-container label{
+  display: block;
+  margin-bottom: 5px;
+  color: darkgray;
+}
+
+.form-container input{
+width: 100%;
+padding: 10px 5px;
+font-size: 14px;
+border: 1px solid lightgrey;
+}
+
+.form-container input:focus{
+  outline: 0;
+  border: 2px solid darkgray;
+}
+
+.form-container small{
+  display: block;
+  color: var(--error-color);
+  margin-top: 7px;
+  visibility: hidden;
+}
+
+.form-container.error small{
+  visibility: visible;
+}
+
+.form-container.error input{
+  border: 2px solid var(--error-color);
+}
+
+.form-container.success input{
+  border: 2px solid var(--success-color);
+}
+
+.btn{
+  background-color: rgb(81, 135, 236);
+  border: 1px solid rgb(81, 135, 236);
+  border-radius: 5px;
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 18px;
+}
